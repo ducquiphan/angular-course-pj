@@ -35,7 +35,6 @@
   "pathMappings": {},
   "nxJsonPlugins": [],
   "fileMap": {
-    "nonProjectFiles": [],
     "projectFileMap": {
       "routing-start": [
         {
@@ -68,7 +67,7 @@
         },
         {
           "file": "package-lock.json",
-          "hash": "18416929039787085679"
+          "hash": "13017347322729370680"
         },
         {
           "file": "package.json",
@@ -111,7 +110,7 @@
         },
         {
           "file": "src/app/app.component.html",
-          "hash": "2919955016385520544"
+          "hash": "14590948777226863332"
         },
         {
           "file": "src/app/app.component.spec.ts",
@@ -122,10 +121,11 @@
         },
         {
           "file": "src/app/app.component.ts",
-          "hash": "465862978777818825",
+          "hash": "10759409206036237108",
           "deps": [
             "npm:@angular/core",
-            "npm:@angular/forms"
+            "npm:@angular/forms",
+            "npm:rxjs"
           ]
         },
         {
@@ -198,6 +198,7 @@
           "hash": "5059954046679394591"
         }
       ]
-    }
+    },
+    "nonProjectFiles": []
   }
 }
