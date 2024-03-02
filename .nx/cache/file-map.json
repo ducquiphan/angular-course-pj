@@ -106,35 +106,35 @@
         },
         {
           "file": "src/app/app.component.css",
-          "hash": "16636576342718043936"
+          "hash": "5924603787238888794"
         },
         {
           "file": "src/app/app.component.html",
-          "hash": "14590948777226863332"
+          "hash": "5620893921524509485"
         },
         {
           "file": "src/app/app.component.spec.ts",
-          "hash": "11164805656760650989",
+          "hash": "5669799828721993252",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/app.component.ts",
-          "hash": "10759409206036237108",
+          "hash": "1332910159689383985",
           "deps": [
             "npm:@angular/core",
-            "npm:@angular/forms",
-            "npm:rxjs"
+            "npm:@angular/common"
           ]
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "10909372875816905858",
+          "hash": "16356940756279315079",
           "deps": [
             "npm:@angular/platform-browser",
             "npm:@angular/core",
-            "npm:@angular/forms"
+            "npm:@angular/forms",
+            "npm:@angular/common"
           ]
         },
         {
