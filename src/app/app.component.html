@@ -1,58 +1,8 @@
+<app-header></app-header>
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-      <form (ngSubmit)="onSubmit()" [formGroup]="signUpForm">
-        <div formGroupName="userData" id="user-data">
-          <div class="form-group mb-3">
-            <label for="username">Username</label>
-            <input class="form-control" formControlName="username" id="username" type="text">
-            <span *ngIf="!signUpForm.get('userData.username').valid && signUpForm.get('userData.username').touched"
-                  class="text-danger">
-              <span *ngIf="signUpForm.get('userData.username').errors['nameIsForbidden']">This name is invalid!</span>
-              <span *ngIf="signUpForm.get('userData.username').errors['required']">This field is required!</span>
-              </span>
-          </div>
-          <button class="btn btn-success mb-3" type="button">Suggest an Username</button>
-          <div class="form-group mb-3">
-            <label for="email">Mail</label>
-            <input class="form-control" formControlName="email" id="email" type="email">
-            <span *ngIf="!signUpForm.get('userData.email').valid && signUpForm.get('userData.email').touched"
-                  class="text-danger">Please
-              enter a valid email!</span>
-          </div>
-        </div>
-        <!-- 				<div class="form-group mb-3"> -->
-        <!-- 					<label for="secret">Secret Questions</label> <select id="secret" class="form-control"> -->
-        <!-- 					<option value="pet">Your first Pet?</option> -->
-        <!-- 					<option value="teacher">Your first teacher?</option> -->
-        <!-- 				</select> -->
-        <!-- 				</div> -->
-        <!-- 				<div class="form-group mb-3"> -->
-        <!-- 					<textarea class="form-control" name="questionAnswer" rows="3" ></textarea> -->
-        <!-- 					<p>Your reply: </p> -->
-        <!-- 				</div> -->
-
-        <div *ngFor="let gender of genders" class="form-check mb-3">
-          <input [value]="gender" class="form-check-input" formControlName="gender" id="flexRadioDefault_{{gender}}"
-                 name="gender" type="radio">
-          <label class="form-check-label text-capitalize"
-                 for="flexRadioDefault_{{gender}}"> {{ gender }} </label>
-        </div>
-
-        <div class="mb-3" formArrayName="hobbies">
-          <h4>Your hobbies</h4>
-          <button (click)="onAddHobby()" class="btn btn-primary mb-3" type="button">Add Hobby</button>
-          <div *ngFor="let hobbyControl of getHobbiesControls(); let i = index" class="form-group mb-3">
-            <input [formControlName]="i" class="form-control" type="text">
-          </div>
-        </div>
-
-        <div>
-          <span *ngIf="!signUpForm.valid && signUpForm.touched" class="text-danger">Please
-              enter a valid data!</span>
-        </div>
-        <button class="btn btn-primary mt-3" type="submit">Submit</button>
-      </form>
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
