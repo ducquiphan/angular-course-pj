@@ -1,41 +1,40 @@
 {
   "version": "6.0",
-  "nxVersion": "18.0.5",
+  "nxVersion": "18.1.2",
   "deps": {
-    "@angular/animations": "^17.0.0",
-    "@angular/common": "^17.0.0",
-    "@angular/compiler": "^17.0.0",
-    "@angular/core": "^17.0.0",
-    "@angular/forms": "^17.0.0",
-    "@angular/platform-browser": "^17.0.0",
-    "@angular/platform-browser-dynamic": "^17.0.0",
-    "@angular/router": "^17.0.0",
+    "@angular/animations": "^16.2.12",
+    "@angular/common": "^16.0.0",
+    "@angular/compiler": "^16.0.0",
+    "@angular/core": "^16.0.0",
+    "@angular/forms": "^16.0.0",
+    "@angular/platform-browser": "^16.0.0",
+    "@angular/platform-browser-dynamic": "^16.0.0",
+    "@angular/router": "^16.0.0",
     "@ng-bootstrap/ng-bootstrap": "^16.0.0",
-    "@nrwl/angular": "^18.0.5",
+    "@nrwl/angular": "^18.0.8",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "5.3",
-    "rxjs": "^6.6.7",
+    "rxjs": "~7.8.0",
     "rxjs-compat": "^6.6.7",
     "tslib": "^2.3.0",
     "webpack": "^5.90.3",
-    "zone.js": "~0.14.2",
-    "@angular-devkit/build-angular": "^17.0.0",
-    "@angular/cli": "^17.0.0",
-    "@angular/compiler-cli": "^17.0.0",
-    "@angular/localize": "^17.0.1",
-    "@types/jasmine": "~5.1.0",
-    "jasmine-core": "~5.1.0",
+    "zone.js": "~0.13.2",
+    "@angular-devkit/build-angular": "^16.0.6",
+    "@angular/cli": "^16.2.12",
+    "@angular/compiler-cli": "^16.0.0",
+    "@angular/localize": "^16.0.1",
+    "@types/jasmine": "~4.3.0",
+    "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.2.2"
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "typescript": "~5.0.2"
   },
   "pathMappings": {},
   "nxJsonPlugins": [],
   "fileMap": {
-    "nonProjectFiles": [],
     "projectFileMap": {
       "routing-start": [
         {
@@ -64,15 +63,15 @@
         },
         {
           "file": "angular.json",
-          "hash": "5536058263100048907"
+          "hash": "6206050995297960722"
         },
         {
           "file": "package-lock.json",
-          "hash": "18416929039787085679"
+          "hash": "18253417346384677257"
         },
         {
           "file": "package.json",
-          "hash": "2057677630851383601",
+          "hash": "9793043038615879361",
           "deps": [
             "npm:@angular/animations",
             "npm:@angular/common",
@@ -107,11 +106,11 @@
         },
         {
           "file": "src/app/app.component.css",
-          "hash": "16636576342718043936"
+          "hash": "3244421341483603138"
         },
         {
           "file": "src/app/app.component.html",
-          "hash": "2919955016385520544"
+          "hash": "4396522058912868441"
         },
         {
           "file": "src/app/app.component.spec.ts",
@@ -122,15 +121,15 @@
         },
         {
           "file": "src/app/app.component.ts",
-          "hash": "465862978777818825",
+          "hash": "10405432052574110310",
           "deps": [
             "npm:@angular/core",
-            "npm:@angular/forms"
+            "npm:@angular/animations"
           ]
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "10909372875816905858",
+          "hash": "13623944213590931802",
           "deps": [
             "npm:@angular/platform-browser",
             "npm:@angular/core",
@@ -142,24 +141,58 @@
           "hash": "3244421341483603138"
         },
         {
+          "file": "src/browserslist",
+          "hash": "6695977786064052243"
+        },
+        {
           "file": "src/environments/environment.prod.ts",
           "hash": "5406836414239361753"
         },
         {
           "file": "src/environments/environment.ts",
-          "hash": "17458466784506237106"
+          "hash": "14274058121339370579"
         },
         {
           "file": "src/favicon.ico",
-          "hash": "3464744996580215640"
+          "hash": "14356862334585494759"
         },
         {
           "file": "src/index.html",
-          "hash": "5308568403770225666"
+          "hash": "5929739674133976728"
+        },
+        {
+          "file": "src/karma.conf.js",
+          "hash": "8703336951671206128",
+          "deps": [
+            [
+              "npm:karma-jasmine",
+              "dynamic"
+            ],
+            [
+              "npm:karma-chrome-launcher",
+              "dynamic"
+            ],
+            [
+              "npm:karma-jasmine-html-reporter",
+              "dynamic"
+            ],
+            [
+              "npm:karma-coverage-istanbul-reporter",
+              "dynamic"
+            ],
+            [
+              "npm:@angular-devkit/build-angular",
+              "dynamic"
+            ],
+            [
+              "npm:path",
+              "dynamic"
+            ]
+          ]
         },
         {
           "file": "src/main.ts",
-          "hash": "10677612470474905821",
+          "hash": "3447864527603543144",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/platform-browser-dynamic"
@@ -167,7 +200,7 @@
         },
         {
           "file": "src/polyfills.ts",
-          "hash": "2035846685621806592",
+          "hash": "9359847944417739405",
           "deps": [
             "npm:zone.js"
           ]
@@ -178,12 +211,24 @@
         },
         {
           "file": "src/test.ts",
-          "hash": "715821617531147605",
+          "hash": "10024151812995070136",
           "deps": [
             "npm:zone.js",
             "npm:@angular/core",
             "npm:@angular/platform-browser-dynamic"
           ]
+        },
+        {
+          "file": "src/tsconfig.app.json",
+          "hash": "9091960022315227931"
+        },
+        {
+          "file": "src/tsconfig.spec.json",
+          "hash": "12845289046551152301"
+        },
+        {
+          "file": "src/tslint.json",
+          "hash": "5600436277826064117"
         },
         {
           "file": "tsconfig.app.json",
@@ -198,6 +243,7 @@
           "hash": "5059954046679394591"
         }
       ]
-    }
+    },
+    "nonProjectFiles": []
   }
 }
